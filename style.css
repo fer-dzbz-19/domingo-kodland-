@@ -5,7 +5,62 @@ body{
     color:#FFFFFF;
 }
 h1{
-    color: black;
-    text-align: center;
+    color: crimson;
+    animation: aparecer 3s infinite;
+    :hover {animation: aparecer 3s infinite;}
+    font-size: 64px;
+    
     font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+    color :#ff5959;
+    animation : brilho 10s infinite;
+    :hover { animation: brilho 10s infinite; }
+    font-size: 32px;
+}
+
+.meteobkue-widget {
+    width: 30%;
+    max-width: 400px;
+    height: auto;
+    border: none;
+}
+
+@keyframes color-change {
+    0% { color: crimson; }
+    25% { color: #FF5700; }
+    50% { color: #FF5733; }
+    75% { color: #FF6F61; }
+    100% { color: crimson; }
+}
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.texto {
+  animation: aparecer 2s ease-in-out;
+}
+
+.texto {
+  color: #fff;
+  text-shadow: 
+    0 0 5px #0ff,
+    0 0 10px #0ff,
+    0 0 20px #0ff;
+  animation: brilho 1.5s infinite alternate;
+}
+
+@keyframes brilho {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
 }
